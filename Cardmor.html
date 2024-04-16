@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./Card.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Feliz 2 Anos meu amor</strong>
+                        <p>
+                            Você se tornou o ser mais precioso do mundo para mim. Admiro muito sua força. Sonho em crescer ao seu lado, formar uma família e até mesmo sujar meu nome comprando uma casa juntos. Meu amor por você é imenso e sempre estarei ao seu lado, apoiando e amando você. Estou muito feliz com nossa jornada juntos e sei que realizaremos todos os nossos sonhos. 
+                            Eu te amo e sempre vou te amar ate meus 89 anos. <br/> Obrigado por Tudo <3
+                    
+                        
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
